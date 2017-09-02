@@ -3,6 +3,8 @@ project (LSL
 	VERSION 1.4.0
 	LANGUAGES C CXX)
 
+set (CMAKE_CXX_FLAGS "-std=c++11")
+
 cmake_policy(SET CMP0042 NEW) # ENABLE CMP0042: MACOSX_RPATH is enabled by default.
 if(NOT CMAKE_DEBUG_POSTFIX)
 	set(CMAKE_DEBUG_POSTFIX -debug)
